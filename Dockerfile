@@ -1,7 +1,7 @@
 ARG VERSION
 
 FROM archlinux:${VERSION:-latest}
-LABEL MAINTAINER="DCsunset"
+LABEL MAINTAINER="Inglan"
 
 ENV noVNC_version=1.2.0
 ENV websockify_version=0.9.0
@@ -14,7 +14,7 @@ ENV websockify_version=0.9.0
 # Install apps
 RUN pacman -Syu --noconfirm plasma-meta \
 	kde-accessibility-meta kde-system-meta konsole \
-	chromium vim wget tigervnc xorg-server \
+	firefox vim wget tigervnc xorg-server \
 	python-numpy python-setuptools \
 	&& pacman -Scc --noconfirm
 
