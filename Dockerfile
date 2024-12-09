@@ -3,8 +3,8 @@ ARG VERSION
 FROM archlinux:${VERSION:-latest}
 LABEL MAINTAINER="Inglan"
 
-ENV noVNC_version=1.2.0
-ENV websockify_version=0.9.0
+ENV noVNC_version=1.5.0
+ENV websockify_version=0.12.0
 
 # Local debug
 # COPY ./mirrorlist /etc/pacman.d/mirrorlist 
